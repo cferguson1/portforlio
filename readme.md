@@ -1,4 +1,4 @@
-Alt-How to deploy to live server
+How to deploy to live server
 ======
 
 **Merge Dev Branch into Master**
