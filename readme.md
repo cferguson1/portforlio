@@ -2,10 +2,9 @@ How to deploy to live server
 ======
 
 **Merge Dev Branch into Master**
-After you've finished and tested a feature on your local dev environment, merge the newFeatureName Branch back into master. You'll need to checkin to the master branch, and pull from the github repository. The github directory is aliased "github" and the live server is aliased "LiveServer".
+After you've finished and tested a feature on your local dev environment, merge the newFeatureName Branch back into master. You'll need to checkin to the master branch, and pull from the github repository. The github directory is aliased "github".
 
 1. $ git checkout master
-  1. Switches to the local master branch
 2. $ git pull github master
   1. github is the name of the remote repo
   2. Resolve any conflicts
@@ -17,5 +16,11 @@ After you've finished and tested a feature on your local dev environment, merge 
 3. $ git merge newFeatureName
   1. Resolve any conflicts
 
-**Test** 
-Test every aspect of the new feature.
+
+**Commit changes to Staging server**
+1. git push Staging master
+
+**TEST!**
+
+**Commit changes to LiveServer**
+1. git push LiveServer master
