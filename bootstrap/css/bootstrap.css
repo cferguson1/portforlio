@@ -4095,6 +4095,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border-color: #e7e7e7;
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
+  font-size: 17px;
 }
 .navbar-default .navbar-brand {
   color: #B0B0B0;
