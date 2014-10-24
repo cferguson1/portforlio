@@ -74,6 +74,59 @@ footer.intro-container {
 footer ul {
   list-style-type: none;
 }
+#mainMenu {
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  border-radius: 0;
+}
+#mainMenu.navbar-fixed-top {
+  border-bottom: 1px solid #882a54;
+  background-color: #882a54;
+  border-color: #882a54;
+  color: #FFF;
+}
+#mainMenu.navbar-fixed-top a {
+  color: #FFF;
+}
+#mainMenu.navbar-fixed-top a:hover {
+  box-shadow: 0px -3px 0px #ffffff inset;
+}
+#mainMenu.navbar-fixed-top .active a {
+  box-shadow: 0px -3px 0px #ffffff inset;
+}
+#mainMenu.navbar-fixed-top .navbar-toggle .icon-bar {
+  background-color: #FFF;
+}
+.navbar-default {
+  border-bottom: 1px solid #CCC;
+}
+.navbar-default a {
+  color: #b0b0b0;
+}
+.navbar-default a:hover {
+  color: #882a54;
+  box-shadow: 0px -3px 0px #882a54 inset;
+}
+.navbar-default .active a {
+  color: #882a54;
+  box-shadow: 0px -3px 0px #882a54 inset;
+}
+.navbar-default .navbar-toggle {
+  padding: 18px 15px;
+  border: 0;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #882a54;
+}
+.navbar-default .navbar-toggle.collapsed:hover .icon-bar {
+  background-color: #882a54;
+}
+.navbar-default .navbar-toggle.collapsed .icon-bar {
+  background-color: #b0b0b0;
+}
 #main-content {
   padding: 30px 0 0 0;
 }
@@ -168,7 +221,7 @@ footer ul {
   padding: 1000em;
   margin: -1000em;
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1199px) {
   #lightbox.show {
     width: 90%;
     left: 5%;
