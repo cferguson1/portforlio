@@ -81,6 +81,7 @@ footer ul {
   -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
   border-radius: 0;
+  margin-bottom: 0;
 }
 #mainMenu.navbar-fixed-top {
   border-bottom: 1px solid #882a54;

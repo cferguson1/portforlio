@@ -60,18 +60,18 @@ jQuery(function ($) {
 	/////////////////////////////////////////////////
 
 	var headHeight = $('header').outerHeight();
-	var menuHeight = $('nav.navbar').outerHeight();
+	var menuHeight = $('#mainMenu').outerHeight();
 
 	var positionMenu = function() {
 		headHeight = $('header').outerHeight();
-		menuHeight = $('nav.navbar').outerHeight();
+		menuHeight = $('#mainMenu').outerHeight();
 
 		if( $(this).scrollTop() > headHeight ) {
 			$('nav.navbar').addClass('navbar-fixed-top');
-			$('#main-content').css('padding-top', menuHeight);
+			$('#main-content').css('padding-top', menuHeight + 30);
 		} else {
 			$('nav.navbar').removeClass('navbar-fixed-top');
-			$('#main-content').css('padding-top', 0);
+			$('#main-content').css('padding-top', 30);
 		}
 	}
 
