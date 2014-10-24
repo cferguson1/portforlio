@@ -53,4 +53,36 @@ jQuery(function ($) {
 	// Lightbox Start End /////////////////////////
 	///////////////////////////////////////////////
 
+
+
+	/////////////////////////////////////////////////
+	// Float Menu Start /////////////////////////////
+	/////////////////////////////////////////////////
+
+	var headHeight = $('header').outerHeight();
+	var menuHeight = $('nav.navbar').outerHeight();
+
+	var positionMenu = function() {
+		headHeight = $('header').outerHeight();
+		menuHeight = $('nav.navbar').outerHeight();
+
+		if( $(this).scrollTop() > headHeight ) {
+			$('nav.navbar').addClass('navbar-fixed-top');
+			$('#main-content').css('padding-top', menuHeight);
+		} else {
+			$('nav.navbar').removeClass('navbar-fixed-top');
+			$('#main-content').css('padding-top', 0);
+		}
+	}
+
+	positionMenu();
+
+	$(window).on( 'touchmove scroll', function() {
+		positionMenu();
+	});
+
+	///////////////////////////////////////////////
+	// Float Menu End /////////////////////////////
+	///////////////////////////////////////////////
+
 });
