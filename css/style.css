@@ -75,15 +75,15 @@ footer ul {
   list-style-type: none;
 }
 #mainMenu {
+  border-radius: 0;
+  margin-bottom: 0;
+}
+#mainMenu.navbar-fixed-top {
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
   -ms-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
-  border-radius: 0;
-  margin-bottom: 0;
-}
-#mainMenu.navbar-fixed-top {
   border-bottom: 1px solid #882a54;
   background-color: #882a54;
   border-color: #882a54;
