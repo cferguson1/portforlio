@@ -1,4 +1,9 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:600,700,300);
+
+@import "icons/css/icons.css";
+body {
+  color: #777777;
+}
 img {
   max-width: 100%;
 }
@@ -9,8 +14,43 @@ a {
   -o-transition: all .1s linear;
   transition: all .1s linear;
 }
-li i.fa {
+li i.icon {
   margin-right: 10px;
+}
+.icon {
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+.icon:hover {
+  text-decoration: none;
+}
+.icon.icon-html5 {
+  color: #EE5F27;
+}
+.icon.icon-css3 {
+  color: #139AD2;
+}
+.icon.icon-jquery {
+  color: #0868AC;
+}
+.icon.icon-joomla {
+  color: #5AA426;
+}
+.icon.icon-wordpress {
+  color: #333333;
+}
+a {
+  color: #882a54;
+  font-weight: 600;
+}
+a.icon {
+  color: #b0b0b0;
+}
+a:hover {
+  color: #5f1b39;
 }
 h1,
 h2,
@@ -94,6 +134,7 @@ footer ul {
 }
 #mainMenu.navbar-fixed-top a:hover {
   box-shadow: 0px -3px 0px #ffffff inset;
+  color: #FFF;
 }
 #mainMenu.navbar-fixed-top .active a {
   box-shadow: 0px -3px 0px #ffffff inset;
@@ -137,27 +178,20 @@ footer ul {
   border: 1px solid #CCC;
   margin-bottom: 30px;
 }
-.box-item:hover .box-text {
-  color: #333333;
-}
-.box-item .btn {
-  border-bottom: none;
-}
-.box-item .btn.pull-right {
-  border-right: none;
+.box-item .icon {
+  font-size: 160%;
 }
 .box-item .box-image {
   box-shadow: 1px 1px 1px #fff inset;
   border-bottom: 1px solid #ccc;
 }
-.box-item .box-text {
+.box-item .box-content {
   padding: 15px;
   -webkit-transition: all .1s linear;
   -moz-transition: all .1s linear;
   -ms-transition: all .1s linear;
   -o-transition: all .1s linear;
   transition: all .1s linear;
-  color: #777777;
 }
 #lightbox {
   position: absolute;
@@ -196,7 +230,7 @@ footer ul {
   border-top: 0;
   border-right: 0;
 }
-#lightbox .lightbox-exit .fa {
+#lightbox .lightbox-exit .icon {
   margin-right: 5px;
 }
 #lightbox .lightbox-exit:hover {

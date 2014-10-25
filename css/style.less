@@ -6,12 +6,17 @@
 // Colors /////////////////////////////
 @superlighttext: #B0B0B0;
 @lighttext: #777;
-@bodytext: #333;
+@darktext: #333;
 
 @purple: #882A54;
 @darkpurple: #5F1B39;
 
 @import url(http://fonts.googleapis.com/css?family=Raleway:600,700,300);
+@import "icons/css/icons.css";
+
+body {
+	color: @lighttext;
+}
 
 img {
 	max-width: 100%;
@@ -24,8 +29,45 @@ a {
 	transition: all .1s linear;
 }
 
-li i.fa {
+li i.icon {
 	margin-right: 10px;
+}
+
+.icon {
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+	&:hover {
+		text-decoration: none;
+	}
+	&.icon-html5 {
+		color: #EE5F27;
+	}
+	&.icon-css3 {
+		color: #139AD2;
+	}
+	&.icon-jquery {
+		color: #0868AC;
+	}
+	&.icon-joomla {
+		color: #5AA426;
+	}
+	&.icon-wordpress {
+		color: @darktext;
+	}
+}
+
+a {
+	color: @purple;
+	font-weight: 600;
+	&.icon {
+		color: @superlighttext;
+	}
+	&:hover {
+		color: @darkpurple;
+	}
 }
 
 h1,
@@ -102,6 +144,7 @@ footer {
 			color: #FFF;
 			&:hover {
 				box-shadow: 0px -3px 0px #fff inset;
+				color: #FFF;
 			}
 		}
 		.active {
@@ -160,29 +203,20 @@ footer {
 	width: 100%;
 	border: 1px solid #CCC;
 	margin-bottom: 30px;
-	&:hover {
-		.box-text {
-			color: @bodytext;
-		}
-	}
-	.btn {
-		border-bottom: none;
-		&.pull-right {
-			border-right: none;
-		}
+	.icon {
+		font-size: 160%;
 	}
 	.box-image {
 		box-shadow: 1px 1px 1px #fff inset;
 		border-bottom: 1px solid #ccc;
 	}
-	.box-text {
+	.box-content {
 		padding: 15px;
 		-webkit-transition: all .1s linear;
 		-moz-transition: all .1s linear;
 		-ms-transition: all .1s linear;
 		-o-transition: all .1s linear;
 		transition: all .1s linear;
-		color: @lighttext;
 	}
 }
 
@@ -221,7 +255,7 @@ footer {
 	    right: 10%;
 	    border-top: 0;
 	    border-right: 0;
-	    .fa {
+	    .icon {
 	    	margin-right: 5px;
 	    }
 	    &:hover {
